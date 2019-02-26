@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const KeywordSchema = new Schema({
-  name: String,
+  title: String,
   definition: String,
 });
 

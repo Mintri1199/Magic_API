@@ -13,8 +13,17 @@ module.exports = (app) => {
     res.send(keywordJson);
   });
 
+  // Read
+  app.get('/api/keyword/:id', (req, res) => {
+    Keyword.findById(req.params.id)
+      .then((word) => {
+        res.send(word);
+      }).catch((err) => {
+        console.log(err.message);
+      });
+  });
+
   app.post('/api/keyword', (req, res) => {
-    // let newKeyword = req.params.keyword;
     console.log(req.body);
     const newKeyword = new Keyword(req.body);
 
