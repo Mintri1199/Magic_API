@@ -9,6 +9,7 @@ module.exports = (app) => {
     res.send('Hello');
   });
 
+  // Index
   app.get('/api', (req, res) => {
     res.send(keywordJson);
   });
@@ -23,6 +24,7 @@ module.exports = (app) => {
       });
   });
 
+  // Create
   app.post('/api/keyword', (req, res) => {
     console.log(req.body);
     const newKeyword = new Keyword(req.body);
@@ -30,5 +32,15 @@ module.exports = (app) => {
     newKeyword.save(() => {
       res.redirect('/api');
     });
+  });
+
+  // Update
+  app.put('/api/keyword/:id', (req, res) => {
+    Keyword.findOneAndUpdate({ _id: req.params.id }, req.body)
+      .then(() => {
+        res.redirect(`/api/keyword/${req.params.id}`);
+      }).catch((err) => {
+        console.log(err.message);
+      });
   });
 };
