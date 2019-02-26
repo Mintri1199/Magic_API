@@ -4,15 +4,20 @@ const app = express();
 
 const mongoose = require('mongoose');
 
-// Using controllers
-require('./controllers/keywords')(app);
+const bodyParser = require('body-parser');
+
+// Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Connect Database
-const url = 'mongodb://localhost/magic-api';
-mongoose.Promise = global.Promise;
+const url = process.env.MONGODB_URI || 'mongodb://localhost/magic-api';
 mongoose.connect(url, { useNewUrlParser: true });
-mongoose.connection.on('error', console.error.bind(console, 'MongoDB Connection Error'));
-mongoose.set('debug', true);
+
+
+// Using controllers
+require('./controllers/keywords.js')(app);
+
 
 const port = process.env.PORT || 3000;
 
