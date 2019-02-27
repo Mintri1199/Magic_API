@@ -1,5 +1,6 @@
 // const app = require('express')();
 
+
 const keywordJson = require('../RevisedKeywords.json');
 
 const Keyword = require('../models/keyword');
@@ -42,5 +43,20 @@ module.exports = (app) => {
       }).catch((err) => {
         console.log(err.message);
       });
+  });
+
+  // Delete
+  app.delete('/api/keyword/:id', (req, res) => {
+    Keyword.findOneAndDelete({ _id: req.params.id })
+      .then(() => {
+        res.redirect('/api');
+      }).catch((err) => {
+        console.log(err.message);
+      });
+  });
+
+  app.get('/api/keywordJson', () => {
+    console.log(keywordJson.length);
+    Keyword.insertMany(keywordJson);
   });
 };
