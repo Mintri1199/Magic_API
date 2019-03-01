@@ -1,6 +1,3 @@
-// const app = require('express')();
-
-
 const keywordJson = require('../RevisedKeywords.json');
 
 const Keyword = require('../models/keyword');
@@ -12,7 +9,9 @@ module.exports = (app) => {
 
   // Index
   app.get('/api', (req, res) => {
-    res.send(keywordJson);
+    Keyword.find().then((all) => {
+      res.send(all);
+    });
   });
 
   // Read
@@ -55,8 +54,24 @@ module.exports = (app) => {
       });
   });
 
-  app.get('/api/keywordJson', () => {
-    console.log(keywordJson.length);
-    Keyword.insertMany(keywordJson);
+  // Populate Database
+  app.post('/api/keywordJson', (req, res) => {
+    Keyword.insertMany(keywordJson)
+      .then(() => {
+        res.redirect('/api');
+      });
   });
+
+  // Find
+  // // This is not working
+  // app.get('/api/find/', (req, res) => {
+  //   console.log(req.body);
+  //   Keyword.find({ title: { $in: req.body } })
+  //     .then((all) => {
+  //       res.send(all);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err.message);
+  //     });
+  // });
 };

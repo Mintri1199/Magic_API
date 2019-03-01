@@ -6,9 +6,20 @@ const mongoose = require('mongoose');
 
 const bodyParser = require('body-parser');
 
+const jwt = require('jsonwebtoken');
+
+const bcrypt = require('bcryptjs');
+
+const cookieParser = require('cookie-parser');
+
+const expressValidator = require('express-validator');
+
 // Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(expressValidator());
+app.use(cookieParser());
+
 
 // Connect Database
 const url = process.env.MONGODB_URI || 'mongodb://localhost/magic-api';
