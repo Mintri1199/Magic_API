@@ -121,7 +121,7 @@ typings/
 
 
 ### ignore keyword json
-RevisedKeywords.json
+#RevisedKeywords.json
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files

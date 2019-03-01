@@ -1,0 +1,230 @@
+[
+    {
+        "title" : "Deathtouch",
+        "definition" : "Any amount of damage this deals to a creature is enough to destroy it."
+    },
+    {
+        "title" : "Defender",
+        "definition" : "This creature can't attack."
+    },
+    {
+        "title" : "Double strike",
+        "definition" : "This creature deals both first-strike and regular combat damage."
+    },
+    {
+        "title" : "First Strike",
+        "definition" : "This creature deals both first-strike and regular combat damage."
+    },
+    {
+        "title" : "Flying"  ,
+        "definition" : "This creature can't be blocked except by creatures with flying and/or reach."
+    },
+    {
+        "title" : "Haste",
+        "definition" : "This creature can attack and tap as soon as it comes under your control."
+    },
+    {
+        "title" : "Hexproof" ,
+        "definition" : "This permanent can't be the target of spells or abilities your opponents control."
+    },
+    {
+        "title" : "Indestructable" ,
+        "definition" : "Effects that say \"destroy\" don’t destroy this."
+    },
+    {
+        "title" : "Intimidate" ,
+        "definition" : "This creature can't be blocked except by artifact creatures and/or creatures that share a color with it."
+    },
+    {
+        "title" : "Plainswalk" ,
+        "definition" : "This creature can't be blocked as long as defending player controls a plains."
+    },
+    {
+        "title" : "Islandwalk" ,
+        "definition" : "This creature can't be blocked as long as defending player controls a island."
+    },
+    {
+        "title" : "Mountainwalk" ,
+        "definition" : "This creature can't be blocked as long as defending player controls a mountain."
+    },
+    {
+        "title" : "Swapwalk" ,
+        "definition" : "This creature can't be blocked as long as defending player controls a swamp."
+    },
+    {
+        "title" : "Forestwalk"  ,
+        "definition" : "This creature can't be blocked as long as defending player controls a forest."
+    },
+    {
+        "title" : "Lifelink" ,
+        "definition" : "Damage dealt by this creature also causes you to gain that much life."
+    },
+    {
+        "title" : "Protection from red"  ,
+        "definition" : "This can't be blocked, targeted, dealt damage, or enchanted by anything red."
+    },
+    {
+        "title" : "Protection from blue"  ,
+        "definition" : "This can't be blocked, targeted, dealt damage, or enchanted by anything blue."
+    },
+    {
+        "title" : "Protection from green"  ,
+        "definition" : "This can't be blocked, targeted, dealt damage, or enchanted by anything green."
+    },
+    {
+        "title" : "Protection from white" ,
+        "definition" : "This can't be blocked, targeted, dealt damage, or enchanted by anything white."
+    },
+    {
+        "title" : "Protection from black" ,
+        "definition" : "This can't be blocked, targeted, dealt damage, or enchanted by anything black."
+    },
+    {
+        "title" : "Protection" ,
+        "definition" : "This can't be blocked, targeted, dealt damage, or enchanted by anything [quality]."
+    },
+    {
+        "title" : "Reach" ,
+        "definition" : "This creature can block creature with flying."
+    },
+    {
+        "title" : "Shroud" ,
+        "definition" : "This permanent or player can't be the target of spell or abilities."
+    },
+    {
+        "title" : "Trample" ,
+        "definition" : "This creature can deal excess combat damage to player or planeswalker it's attacking."
+    },
+    {
+        "title" : "Vigiliance" ,
+        "definition" : "TAttacking doesn't cause this creature to tap."
+    },
+    {
+        "title" : "Banding" ,
+        "definition" : "Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking."
+    },
+    {
+        "title" : "Rampage N" ,
+        "definition" : "Whenever this creature becomes blocked, it gets +N/+N until end of turn for each creature blocking it beyond the first."
+    },
+    {
+        "title" : "Flanking" ,
+        "definition" : "Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn."
+    },
+    {
+        "title" : "Phasing" ,
+        "definition" : "This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist."
+    },
+    {
+        "title" : "Shadow" ,
+        "definition" : "This creature can block or be blocked by only creatures with shadow."
+    },
+    {
+        "title" : "Horsemanship" ,
+        "definition" : "This creature can't be blocked except by creatures with horsemanship."
+    },
+    {
+        "title" : "Fear" ,
+        "definition" : "This creature can't be blocked except by artifact creatures and/or black creatures."
+    },
+    {
+        "title" : "Provoke" ,
+        "definition" : "Whenever this attacks, you may have target creature defending player controls untap and block it if able."
+    },
+    {
+        "title" : "Bushido N" ,
+        "definition" : "Whenever this creature blocks or becomes blocked, it gets +N/+N until end of turn."
+    },
+    {
+        "title" : "Frenzy N" ,
+        "definition" : "Whenever this creature attacks and isn't blocked, it gets +N/+0 until end of turn."
+    },
+    {
+        "title" : "Absorb N" ,
+        "definition" : "If a source would deal damage to this creature, prevent N of that damage."
+    },
+    {
+        "title" : "Poisonous N" ,
+        "definition" : "Whenever this creature deals combat damage to a player, that player gets N poison counters."
+    },
+    {
+       "title" : "Changeling" ,
+        "definition" : "This card is every creature type."
+    },
+    {
+        "title" : "Exalted" ,
+        "definition" : "Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn."
+    },
+    {
+        "title" : "Annihilator N" ,
+        "definition" : "Whenever this creature attacks, defending player sacrifices N permanents."
+    },
+    {
+        "title" : "Infect" ,
+        "definition" : "This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters."
+    },
+    {
+        "title" : "Wither" ,
+        "definition" : "This deals damage to creatures in the form of -1/-1 counters."
+    },
+    {
+        "title" : "Battle cry" ,
+        "definition" : "Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn."
+    }, 
+    {
+        "title" : "Undying" ,
+        "definition" : "When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner's control with a +1/+1 counter on it.)"
+    },
+    {
+        "title" : "Evolve" ,
+        "definition" : "Whenever a creature enters the battlefield under your control, if that creature has greater power or toughness than this creature, put a +1/+1 counter on this creature."
+    },
+    {
+       "title" :  "Dethrone" ,
+        "definition" : "Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on it."
+    },
+    {
+        "title" : "Menace" ,
+        "definition" : "This creature can't be blocked except by two or more creatures."
+    },
+    {
+        "title" : "Renown N" ,
+        "definition" : "Whenever this creature deals combat damage to a player, if it isn't renowned, put N +1/+1 counter on it and it becomes renowned."
+    },
+    {
+        "title" : "Devoid" ,
+        "definition" : "This card has no color."
+    },
+    {
+        "title" : "Ingest" ,
+        "definition" : "(Whenever this creature deals combat damage to a player, that player exiles the top card of his or her library"
+    },
+    {
+        "title" : "Myriad",
+        "definition" : "Whenever this creature attacks, for each opponent other than defending player, you may create a token that's a copy of this creature that's tapped and attacking that player or a planeswalker he or she controls. If one or more tokens are created this way, exile the tokens at end of combat."
+    },
+    {
+        "title" : "Skulk",
+        "definition" : "This creature can't be blocked by creatures with greater power."
+    },
+    {
+        "title" : "Melee",
+        "definition" : "Whenever this creature attacks, it gets +1/+1 until end of turn for each opponent you attacked with a creature this combat."
+    },
+    {
+        "title" : "Afflict N",
+        "definition" : "Whenever this creature becomes blocked, defending player loses N life."
+    },
+    {
+        "title" : "Mentor" ,
+        "definition" : "Whenever this creature attacks, put a +1/+1 counter on target attacking creature with lesser power."
+    },
+    {
+        "title" : "Afterlife N"  ,
+        "definition" : "When this creatures dies, N 1/1 white and black Spirit tokens with flying."
+    },
+    {
+        "title" : "Adapt N"  ,
+        "definition" : "[cost]. If this creature has no +1/+1 counters on it, put N +1/+1 counters on it."
+    }
+]

@@ -54,14 +54,6 @@ module.exports = (app) => {
       });
   });
 
-  // Populate Database
-  app.post('/api/keywordJson', (req, res) => {
-    Keyword.insertMany(keywordJson)
-      .then(() => {
-        res.redirect('/api');
-      });
-  });
-
   // Find One with title
   // This is not working
   app.get('/api/find/', (req, res) => {
