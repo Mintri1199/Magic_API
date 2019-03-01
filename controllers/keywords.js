@@ -1,5 +1,3 @@
-const keywordJson = require('../RevisedKeywords.json');
-
 const Keyword = require('../models/keyword');
 
 module.exports = (app) => {
