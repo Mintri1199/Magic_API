@@ -62,16 +62,17 @@ module.exports = (app) => {
       });
   });
 
-  // Find
-  // // This is not working
-  // app.get('/api/find/', (req, res) => {
-  //   console.log(req.body);
-  //   Keyword.find({ title: { $in: req.body } })
-  //     .then((all) => {
-  //       res.send(all);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err.message);
-  //     });
-  // });
+  // Find One with title
+  // This is not working
+  app.get('/api/find/', (req, res) => {
+    console.log(req.body);
+    Keyword.find({ title: { $in: req.body.data } })
+
+      .then((all) => {
+        res.send(all);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  });
 };
