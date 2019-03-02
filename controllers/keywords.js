@@ -53,6 +53,7 @@ module.exports = (app) => {
   });
 
   // Find One with title
+  // Assisted by Edwin Cloud
   app.post('/api/find', (req, res) => {
     let query = '';
     if (req.query.title && typeof req.query.title === 'string') {
