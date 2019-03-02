@@ -6,5 +6,6 @@ const KeywordSchema = new Schema({
   title: String,
   definition: String,
 });
+KeywordSchema.index({ title: 'text' });
 
 module.exports = mongoose.model('Keyword', KeywordSchema);

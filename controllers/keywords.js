@@ -53,10 +53,15 @@ module.exports = (app) => {
   });
 
   // Find One with title
-  // This is not working
-  app.get('/api/find/', (req, res) => {
-    console.log(req.body);
-    Keyword.find({ title: { $in: req.body.data } })
+  app.post('/api/find', (req, res) => {
+    let query = '';
+    if (req.query.title && typeof req.query.title === 'string') {
+      query = req.query.title;
+    } else {
+      query = req.query.title.join(' ');
+    }
+    // res.send();
+    Keyword.find({ $text: { $search: query } })
 
       .then((all) => {
         res.send(all);
