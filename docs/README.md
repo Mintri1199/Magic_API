@@ -70,8 +70,7 @@ Example: `/api/find?title=Flying` will return a keyword that has Flying as the t
 ]
 ```
 
-Finding many
-Example: `/api/find?title=Deathtouch&title=Flying&title=First%20Strike` will return all the keywords that has the match value in the params.
+Example of finding many: `/api/find?title=Deathtouch&title=Flying&title=First%20Strike` will return all the keywords that has the match value in the params.
 > **Note** If you are getting a keyword that have multiple words like *first strike*, the api will separate them into individual words and find all the keyword that match.
 In this case it will return *Double Strike* even though the url didn't ask for it.
 
