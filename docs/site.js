@@ -1,4 +1,7 @@
 window.$docsify = {
-  name: 'magicapp',
-  repo: '',
+  name: 'Magic Keyword API',
+  repo: 'https://github.com/Mintri1199/Magic_API',
+  coverpage: true,
+  homepage: 'README.md',
+  onlyCover: false,
 };
