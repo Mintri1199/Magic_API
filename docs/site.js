@@ -4,4 +4,5 @@ window.$docsify = {
   coverpage: true,
   homepage: 'README.md',
   onlyCover: false,
+  loadNavbar: true,
 };

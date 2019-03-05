@@ -1,4 +1,25 @@
-# Keyword Object
+# Overview
+The Magic Keyword API is a lightweight API to search keyword for Magic: The Gathering. It provides an easy way for developers/Planeswalkers to search keywords and their definitions.
+
+**Where does all the keywords are store?**
+
+All the keywords are store in the API's internal database.
+
+**What can I receive from this API?**
+
+This API will give you one or multiple keywords along with their definition.
+
+**Do you use this API?**
+
+Yes, I am using this API for my Magic Token creation/tracking app.
+
+[Git Hub repo](https://github.com/Mintri1199/Magic_Tokens)
+
+
+# Keyword Document
+
+The keywords are stored as documents in the database.
+
 ``` javascript
 {
     _id: "5c78b8406db1643a4a5ae4fe",
@@ -7,11 +28,22 @@
     "__v": 0
 }
 ```
+| Field | Description |
+|-------|-------------|
+|id       | The item's unique id (assign by the database)            |
+|title       | The name of the keyword             |
+|definition     | The definition of keyword             |
+| __v         | The versionKey of this object            |
 
 # Endpoints
 
-### /api
-`/api/` will return all the keywords in the API database in a JSON format.
+**Base URL** `https://magickeywordapi.herokuapp.com/`
+
+## /api
+
+`/api` will return all the keywords in the API database in a JSON format.
+
+`https://magickeywordapi.herokuapp.com/api`
 
 ``` javascript
 [
@@ -42,9 +74,14 @@
     ...
 ```
 
-### /api/keyword/:id
-`/api/keyword/:id` will return one keyword based on the id given in MongoDB.
-> Example: Get`/api/keyword/:id5c78b8406db1643a4a5ae4fe` will return
+## /api/keyword/:id
+
+`/api/keyword/:id` will return one keyword based on the unique id given in MongoDB.
+
+Example:
+`https://magickeywordapi.herokuapp.com/api/keyword/:id5c78b8406db1643a4a5ae4fe`
+
+Will return the document with an id that match `5c78b8406db1643a4a5ae4fe`
 
 ``` javascript
 {
@@ -55,9 +92,14 @@
 }
 ```
 
-### /api/find
+## /api/find
+
 `/api/find` will return either one or multiple keywords depending on the request params (urlencoded).
-Example: `/api/find?title=Flying` will return a keyword that has Flying as the title.
+
+Example:
+`https://magickeywordapi.herokuapp.com/api/find?title=Flying` 
+
+Will return a keyword that has *Flying* as the title.
 
 ``` javascript
 [
@@ -70,9 +112,13 @@ Example: `/api/find?title=Flying` will return a keyword that has Flying as the t
 ]
 ```
 
-Example of finding many: `/api/find?title=Deathtouch&title=Flying&title=First%20Strike` will return all the keywords that has the match value in the params.
-> **Note** If you are getting a keyword that have multiple words like *first strike*, the api will separate them into individual words and find all the keyword that match.
-In this case it will return *Double Strike* even though the url didn't ask for it.
+Example of finding many:
+
+`https://magickeywordapi.herokuapp.com/api/find?title=Deathtouch&title=Flying&title=First%20Strike` 
+
+Will return all the keywords that has the match value in the params.
+> **Note** If you are getting a keyword that have multiple words like *first strike*, the API will separate them into individual words and find all the keyword that match.
+In this case it will return *Double Strike* even though the url did not include it.
 
 ``` javascript
 [
